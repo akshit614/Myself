@@ -7,3 +7,7 @@
 :root {
     font-family: "Parkinsans", sans-serif;
 }
+
+.transform-smooth {
+    transition: transform 100ms ease-in-out;
+  }
