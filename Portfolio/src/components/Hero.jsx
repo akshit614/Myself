@@ -1,8 +1,9 @@
-import profilePic from "../assets/kevinRushProfile.png"
+import profilePic from "../assets/profile.jpg"
 import { FaLinkedin,FaGithub } from "react-icons/fa"
 import { LuMail } from "react-icons/lu";
 import { BsTwitterX } from "react-icons/bs"
 import {motion} from "framer-motion"
+import resume from "../assets/resume.pdf"
 
 const conatainer = (delay) => ({
     hidden : {x: -100, opacity:0},
@@ -25,11 +26,17 @@ const iconVarients = (d) => ({
             repeatType : "reverse"
         }
     }
+
 })
+
+const openPdf = () => {
+    window.open(resume, "_blank");
+}
+
 
 const Hero = () => {
   return (
-    <div className="border-b border-neutral-800 pb-4 lg:mb-35 md:px-36">
+    <div className="border-b border-neutral-600 pb-4 lg:mb-35 md:px-40 pt-16">
         <div className="flex flex-wrap">
             <div className="w-full lg:w-1/2">
                 <div className="flex flex-col items-start">
@@ -52,7 +59,9 @@ const Hero = () => {
                     variants={conatainer(0.5)}
                     initial="hidden"
                     animate="visible"
-                    className="bg-gradient-to-r from-red-500 via-slate-200 to-cyan-500 bg-clip-text text-4xl text-transparent tracking-tight font-semibold pt-5">Pull Code Push</motion.span>
+                    className="bg-gradient-to-r from-red-500 via-slate-200 to-cyan-500 bg-clip-text text-4xl text-transparent tracking-tight font-semibold py-10">Pull Code Push</motion.span>
+                    <button className="p-2 bg-neutral-300 rounded-full text-black text-lg font-bold my-6" 
+                    onClick={openPdf} >Download Cv</button>
                     <motion.div 
                     variants={conatainer(1)}
                     initial="hidden"
@@ -99,6 +108,7 @@ const Hero = () => {
                     initial="initial"
                     animate="animate"
                     transition={{duration:1 , delay:1.2}}
+                    className="rounded-3xl"
                     src={profilePic} alt="divyanshu" />
                 </div>
             </div>

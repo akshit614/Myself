@@ -4,7 +4,7 @@ import { BsTwitterX } from "react-icons/bs";
 
 const Navbar = () => {
   return (
-    <nav className="mb-10 justify-center md:justify-between py-6 items hidden md:flex">
+    <nav className="justify-center md:justify-between py-6 items hidden md:flex">
         <div className="flex felx-shrink-0 items-center">
           <p className="text-4xl pl-2 pr-6  text-white">
             DC
@@ -17,7 +17,7 @@ const Navbar = () => {
           <a target="_blank" rel="noopener noreferrer" href="https://github.com/akshit614">
           <FaGithub className="hover:scale-125 duration-200"></FaGithub>
           </a>
-          <a href=" https://x.com/Divyansh4code?t=iHA0YtK_nJXxg5gfHu2qeg&s=08 " target="_blank" rel="noopener noreferrer">
+          <a href=" https://x.com/Divyansh4code?t=iHA0YtK_nJXxg5gfHu2qeg&s=08" target="_blank" rel="noopener noreferrer">
           <BsTwitterX className="hover:scale-125 duration-200"></BsTwitterX>
           </a>
         </div>
