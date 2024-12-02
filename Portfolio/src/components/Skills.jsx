@@ -6,6 +6,8 @@ import { BiLogoPostgresql } from "react-icons/bi";
 import { FaGitAlt } from "react-icons/fa6";
 import { VscVscode } from "react-icons/vsc";
 import {motion} from "framer-motion"
+import { MdMoreTime } from "react-icons/md";
+
 
 const iconVarients = (d) => ({
     initial : {y: -10 },
@@ -24,12 +26,19 @@ const iconVarients = (d) => ({
 
 const Skills = () => {
   return (
-    <div className="border-b border-neutral-800 pb-32">
-        <h1 className="my-20 text-center text-5xl text-neutral-100 font-bold">
+    <div className="border-b border-neutral-100  pb-24">
+        <motion.h1 whileInView={{opacity:1, y:0}}
+        initial={{opacity:0, y:-100}}
+        transition={{duration : 1.5}} 
+        className="my-20 text-center text-5xl text-neutral-100 font-semibold md:font-bold">
             Code : Skills
-        </h1>
+        </motion.h1>
         <div className="flex flex-wrap flex-col items-center justify-center gap-10">
-            <div  className="flex gap-8 flex-wrap items-center justify-center">
+            <motion.div 
+            whileInView={{opacity: 1, x:0}}
+            initial={{opacity:0, x: -100}}
+            transition={{duration : 1.5}}
+            className="flex gap-8 flex-wrap items-center justify-center">
                 <motion.div 
                 variants={iconVarients(2)}
                 initial="initial"
@@ -67,8 +76,12 @@ const Skills = () => {
                     <p className="text-white">Python</p>
                 </motion.div>
                 
-            </div>
-            <div className="flex gap-6 flex-wrap items-center justify-center">
+            </motion.div>
+            <motion.div 
+            whileInView={{opacity: 1, x:0}}
+            initial={{opacity:0, x: 100}}
+            transition={{duration : 1.5}}
+            className="flex gap-6 flex-wrap items-center justify-center">
                 <motion.div variants={iconVarients(3)}
                 initial="initial"
                 animate="animate" className="rounded-lg border border-cyan-400 shadow-[6px_6px_0px_0px_#4bdad4] border-solid p-1 md:p-2 px-4 flex items-center justify-center gap-2 md:min-w-[160px] min-w-[100px] hover:scale-110 cursor-pointer transform-smooth">
@@ -95,8 +108,12 @@ const Skills = () => {
                     <FaGitAlt className="text-3xl text-red-600"/>
                     <p className="text-white">Git</p>
                 </motion.div>
-            </div>
-            <div className="flex gap-6 flex-wrap items-center justify-center">
+            </motion.div>
+            <motion.div 
+            whileInView={{opacity: 1, x:0}}
+            initial={{opacity:0, x: -100}}
+            transition={{duration : 1.5}}
+            className="flex gap-6 flex-wrap items-center justify-center">
                
                 <motion.div variants={iconVarients(2)}
                 initial="initial"
@@ -120,8 +137,12 @@ const Skills = () => {
                     <VscVscode className="text-3xl text-blue-600"/>
                     <p className="text-white">Vscode</p>
                 </motion.div>
-            </div>
-            <div className="flex gap-6 flex-wrap items-center justify-center">
+            </motion.div>
+            <motion.div 
+            whileInView={{opacity: 1, x:0}}
+            initial={{opacity:0, x: 100}}
+            transition={{duration : 1.5}}
+            className="flex gap-6 flex-wrap items-center justify-center">
                 <motion.div  variants={iconVarients(1.5)}
                 initial="initial"
                 animate="animate"
@@ -136,13 +157,13 @@ const Skills = () => {
                     <SiPostman className="text-3xl text-orange-500 bg-white rounded-full"/>
                     <p className="text-white">Postman</p>
                 </motion.div>
-            </div>
+            </motion.div>
             <div className="flex gap-6 flex-wrap items-center justify-center">
                 <motion.div variants={iconVarients(2)}
                 initial="initial"
                 animate="animate"
                 className="rounded-lg border border-purple-400 shadow-[6px_6px_0px_0px_#dd21df] border-solid p-1 md:p-2 px-4 flex items-center justify-center gap-2 md:min-w-[160px] min-w-[100px] hover:scale-110 cursor-pointer transform-smooth">
-                        <SiPrisma className="text-3xl text-cyan-300"/>
+                        <MdMoreTime className="text-3xl text-cyan-300"/>
                         <p className="text-white">More</p>
                 </motion.div>
 

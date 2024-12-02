@@ -1,16 +1,21 @@
-import logo from "../assets/kevinRushLogo.png"
-import { FaLinkedin,FaGithub,FaTwitter } from "react-icons/fa"
+import { FaLinkedin,FaGithub } from "react-icons/fa"
+import { BsTwitterX } from "react-icons/bs";
+
 
 const Navbar = () => {
   return (
-    <nav className="mb-20 flex justify-between py-6 items center">
+    <nav className="mb-10 justify-center md:justify-between py-6 items hidden md:flex">
         <div className="flex felx-shrink-0 items-center">
-            <img className="mx-2 w-10" src={logo} alt="logo" />
+          <p className="text-4xl pl-2 pr-6  text-white">
+            DC
+          </p>
         </div>
-        <div className="m-4 flex items-center gap-6 text-3xl">
-        <FaLinkedin className="hover:text-neutral-50"></FaLinkedin>
-        <FaGithub className="hover:text-neutral-50"></FaGithub>
-        <FaTwitter className="hover:text-neutral-50"></FaTwitter>
+        <div className="m-4 flex items-center gap-20 text-3xl text-white">
+          <a href="">
+            <FaLinkedin className="hover:text-neutral-50"></FaLinkedin>
+          </a>
+          <FaGithub className="hover:text-neutral-50"></FaGithub>
+          <BsTwitterX className="hover:text-neutral-50"></BsTwitterX>
         </div>
     </nav>
   )
