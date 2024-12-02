@@ -59,7 +59,7 @@ const Hero = () => {
                     variants={conatainer(0.5)}
                     initial="hidden"
                     animate="visible"
-                    className="bg-gradient-to-r from-red-500 via-slate-200 to-cyan-500 bg-clip-text text-4xl text-transparent tracking-tight font-semibold py-10 md:py-5">Pull Code Push</motion.span>
+                    className="bg-gradient-to-r from-red-500 via-slate-200 to-cyan-500 bg-clip-text text-4xl text-transparent tracking-tight font-semibold py-10 md:py-5">Pull -{'>'} Code -{'>'} Push</motion.span>
                     <button className="p-2 bg-neutral-300 rounded-full text-black text-lg font-bold my-6 md:my-2" 
                     onClick={openPdf} >Download Cv</button>
                     <motion.div 
