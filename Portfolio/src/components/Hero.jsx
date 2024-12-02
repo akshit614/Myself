@@ -36,7 +36,7 @@ const openPdf = () => {
 
 const Hero = () => {
   return (
-    <div className="border-b border-neutral-600 pb-4 lg:mb-35 md:px-40 pt-16">
+    <div className="border-b border-neutral-600 pb-4 lg:mb-35 md:px-40 pt-14 md:pt-0">
         <div className="flex flex-wrap">
             <div className="w-full lg:w-1/2">
                 <div className="flex flex-col items-start">
@@ -59,8 +59,8 @@ const Hero = () => {
                     variants={conatainer(0.5)}
                     initial="hidden"
                     animate="visible"
-                    className="bg-gradient-to-r from-red-500 via-slate-200 to-cyan-500 bg-clip-text text-4xl text-transparent tracking-tight font-semibold py-10">Pull Code Push</motion.span>
-                    <button className="p-2 bg-neutral-300 rounded-full text-black text-lg font-bold my-6" 
+                    className="bg-gradient-to-r from-red-500 via-slate-200 to-cyan-500 bg-clip-text text-4xl text-transparent tracking-tight font-semibold py-10 md:py-5">Pull Code Push</motion.span>
+                    <button className="p-2 bg-neutral-300 rounded-full text-black text-lg font-bold my-6 md:my-2" 
                     onClick={openPdf} >Download Cv</button>
                     <motion.div 
                     variants={conatainer(1)}

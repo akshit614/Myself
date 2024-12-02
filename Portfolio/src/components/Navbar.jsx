@@ -4,7 +4,7 @@ import { BsTwitterX } from "react-icons/bs";
 
 const Navbar = () => {
   return (
-    <nav className="justify-center md:justify-between py-6 items hidden md:flex">
+    <nav className="justify-center md:justify-between py-6 md:pt-4 md:pb-0 items hidden md:flex">
         <div className="flex felx-shrink-0 items-center">
           <p className="text-4xl pl-2 pr-6  text-white">
             DC
