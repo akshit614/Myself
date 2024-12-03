@@ -23,7 +23,7 @@ const Projects = () => {
           transition={{ type: "spring", duration: 1, stiffness: 200 }}
           whileInView={{opacity:1, x:0}}
           initial={{opacity:0, x:100}}
-          className='w-full max-w-xl lg:w-3/4 shadow-[8px_6px_0px_0px_#4bdad4] border p-2 rounded-xl pl-2'>
+          className='w-full max-w-xl lg:w-3/4 shadow-[8px_6px_0px_0px_#4bdad4] border p-2 flex flex-wrap rounded-xl pl-2'>
             <h4 className='mb-2 font-semibold text-xl text-cyan-300'>{project.title}</h4>
             <a 
             target="_blank" rel="noopener noreferrer" 
@@ -40,9 +40,9 @@ const Projects = () => {
                  <span className='mb-4 pl-4'>{desc}</span>
               </div>
             ))}
-
+            
             {project.technologies.map((tech,index) => (
-              <span key={index} className='mr-2 rounded bg-neutral-800 px-2 py-1 text-sm font-medium text-purple-500'>{tech}</span>
+              <span key={index} className='mr-2 mt-4 rounded bg-neutral-800 px-2 py-1 text-sm font-medium text-purple-500 '>{tech}</span>
             ))}
           </motion.div>
         </div>
